@@ -24,7 +24,7 @@
   <div class="misses">0</div>
   <div class="top-score">000000</div>
   <div class="msg start-game">PRESS [J] TO START</div>
-  <div class="msg game-over">MISS = 10<br/><br/>GAME OVER</div>
+  <div class="msg game-over">GAME OVER<br/><br/>PRESS [J] TO PLAY AGAIN</div>
 
   <script src="hogan.js"></script>
   <script>
@@ -35,16 +35,16 @@
     $(document).keyup(function(ev) {
       // if the [J] key was pressed
       if (ev.keyCode === 74) {
-        if ($('.start-game').is(':visible')) {
+        if ($('.start-game,.game-over').is(':visible')) {
           startGame();
         }
       }
     });
 
     var maxMisses = 10,
-        misses = 0,
-        round = 0,
-        score = 0,
+        misses,
+        round,
+        score,
         topScore = 0;
 
 function tallyScore(stats) {
@@ -60,9 +60,16 @@ function tallyScore(stats) {
     topScore = score;
     $('.top-score').text(topScore);
   }
+
+  console.log('duration: ' + stats.duration);
+  $('.stopwatch').text((stats.duration*.001).toFixed(2)).show();
 }
 
     function startGame() {
+
+      misses = 0,
+      round = 0,
+      score = 0
       
       $('.msg').hide();
       $('.round,.misses,.score').show();
@@ -85,9 +92,13 @@ function tallyScore(stats) {
         onShowTargets: function(targets) {
           for (var i=0; i<targets.length; i++) {
             $('.target-' + targets[i].position)
+              .removeClass('good-guy')
+              .removeClass('bad-guy')
               .addClass(targets[i].type === 'good' ? 'good-guy' : 'bad-guy')
-              .click(function() {
-                r.shoot(targets[i].position);
+              .unbind('click')
+              .one('click', targets[i].position, function(e) {
+                console.log('shooting target: ' + e.data)
+                r.shoot(e.data);
               });
           }
 
@@ -107,7 +118,7 @@ function tallyScore(stats) {
           else {
             // GAME OVER
             $('.msg,.miss,.target,.stopwatch').hide();
-            $('.start-game,.game-over').show();
+            $('.game-over').show();
           }
         }
 

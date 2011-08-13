@@ -64,7 +64,7 @@ function startRound() {
 
   // simulate user shooting target
   setTimeout(function() {
-    t.shoot(Math.floor(Math.random()*3)); // shoot a random target
+    t.shoot(Math.floor(Math.random()*2)+1); // shoot a random target
   }, 500); 
 }
 

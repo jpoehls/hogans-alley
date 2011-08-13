@@ -87,7 +87,7 @@
 		}
 
 		function shoot(targetPosition) {
-			var target = targets[targetPosition];
+			var target = targets[targetPosition-1];
 			target.shot = true;
 			
 			config.onHit(target);
