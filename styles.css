@@ -1,0 +1,101 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Courier New";
+}
+
+.background {
+  background-image: url(background.png);
+  width: 636px;
+  height: 599px;
+}
+
+.stopwatch {
+  font-size: 34px;
+  font-weight: bold;
+  color: rgb(140,214,0);
+  text-align: center;
+  width: 75px;
+  position: absolute;
+  top: 85px;
+  left: 280px;
+}
+
+.target .miss {
+  font-size: 24px;
+  color: rgb(252,110,156);
+  text-align: center;
+  width: 75px;
+  position: absolute;
+  top: 185px;
+}
+
+.target {
+  width: 75px;
+  height: 140px;
+  position: absolute;
+  top: 200px;
+}
+
+.target-1 {
+  left: 120px;
+  background-image: url(good-girl.jpg);
+}
+
+.target-2 {
+  left: 280px;
+  background-image: url(bad-guy.jpg);
+}
+
+.target-3 {
+  left: 440px;
+  background-image: url(cop-dude.png);
+}
+
+.score {
+  font-size: 28px;
+  color: White;
+  text-align: right;
+  width: 125px;
+  position: absolute;
+  top: 490px;
+  left: 75px;
+}
+
+.round {
+  font-size: 40px;
+  color: rgb(140,214,0);
+  text-align: right;
+  width: 45px;
+  position: absolute;
+  top: 480px;
+  left: 315px;
+}
+
+.misses {
+  font-size: 28px;
+  color: White;
+  position: absolute;
+  top: 510px;
+  left: 355px;
+}
+
+.top-score {
+  font-size: 28px;
+  color: White;
+  text-align: right;
+  width: 125px;
+  position: absolute;
+  top: 490px;
+  left: 440px;
+}
+
+.msg {
+  font-size: 38px;
+  color: White;
+  text-align: center;
+  width: 440px;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+}

@@ -1,0 +1,59 @@
+<html>
+<head>
+  <script src="jquery-1.6.2.min.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background"></div>
+  <div class="stopwatch">2.5</div>
+
+  <div class="target target-1 good-guy">
+    <div class="miss">MISS</div>
+  </div>
+  
+  <div class="target target-2 bad-guy">
+    <div class="miss">MISS</div>  
+  </div>
+
+  <div class="target target-3 good-guy">
+    <div class="miss">MISS</div>  
+  </div>
+
+  <div class="score">000000</div>
+  <div class="round">01</div>
+  <div class="misses">0</div>
+  <div class="top-score">000000</div>
+  <div class="msg start-game">PRESS [J] TO START</div>
+  <div class="msg game-over">MISS = 10<br/><br/>GAME OVER</div>
+
+  <script src="srsly.Event.js"></script>
+  <script src="hogan.js"></script>
+  <script>
+    var score = 0;
+
+    $('.msg').hide();
+    $('.miss').hide();
+
+    $('.target').click(function() {
+      score += 100;
+      if ($(this).hasClass('good-guy')) {
+        $(this).children('.miss').show();
+      }
+      else {
+        $('.score').text(score);
+      }
+    });
+
+    var game = new Hogan.Game({
+      timer: $('.stopwatch'),
+      score: $('.score'),
+      round: $('.round'),
+      misses: $('.misses'),
+      topScore: $('.top-score'),
+      message: $('.msg')
+    });
+
+
+  </script>
+</body>
+</html>

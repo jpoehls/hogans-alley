@@ -1,0 +1,245 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"targetse",
+				"targetSetup"
+			],
+			[
+				"startr",
+				"startRound"
+			],
+			[
+				"miss",
+				"milliseconds"
+			],
+			[
+				"inc",
+				"increment"
+			],
+			[
+				"setmi",
+				"setMisses"
+			],
+			[
+				"set",
+				"showTargets"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/User/node.sublime-build",
+	"command_palette":
+	{
+		"height": 31,
+		"selected_items":
+		[
+			[
+				"enc",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"view",
+				"View: Toggle Tabs"
+			],
+			[
+				"vew",
+				"View: Toggle Tabs"
+			]
+		],
+		"width": 392
+	},
+	"console":
+	{
+		"height": 171
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/joshua/Dropbox/env/sublime/User/JSLint.py",
+		"/Users/joshua/Dropbox/env/sublime/User/hello_world.py",
+		"/Users/joshua/Dropbox/env/sublime/Default/delete_word.py",
+		"/Users/joshua/code/hogans-alley/hogan2.js",
+		"/Users/joshua/code/srslyjs/tests/Srsly.Event.tests.js",
+		"/Users/joshua/code/hogans-alley/lib/Srsly.Event.js",
+		"/Users/joshua/code/hogans-alley/hogan.js",
+		"/Users/joshua/Dropbox/env/sublime/User/node.sublime-build",
+		"/Users/joshua/code/hogans-alley/lib/update-libs.sh",
+		"/Users/joshua/code/hogans-alley/range.htm",
+		"/Users/joshua/code/hogans-alley/hogans-alley.sublime-project",
+		"/Users/joshua/code/hogans-alley/styles.css",
+		"/Users/joshua/code/srslyjs/srsly.Event.js",
+		"/Users/joshua/code/srslyjs/tests/srsly.Event.tests.js",
+		"/Users/joshua/code/srslyjs/readme.markdown",
+		"/Users/joshua/code/srslyjs/TestRunner.htm",
+		"/Users/joshua/code/landboss/landboss-core/Landboss.Web/scripts/admin/users/choose-user.js",
+		"/Users/joshua/code/x/.git/COMMIT_EDITMSG",
+		"/Users/joshua/Library/Application Support/Sublime Text 2/Packages/User/Global.sublime-settings",
+		"/Users/joshua/code/hogans-alley/srsly.Event.js",
+		"/Users/joshua/code/hogans-alley/srsly.tests.js",
+		"/Users/joshua/.bashrc",
+		"/Users/joshua/Dropbox/env/mac/setup.sh",
+		"/Users/joshua/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/Users/joshua/Library/Application Support/Sublime Text 2/Packages/Default/Base File.sublime-settings",
+		"/Users/joshua/Library/Application Support/Sublime Text 2/Packages/User/HTML.sublime-settings",
+		"/Users/joshua/Library/Application Support/Sublime Text 2/Packages/User/Distraction Free.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35
+	},
+	"find_in_files":
+	{
+		"height": 91,
+		"include_history":
+		[
+		],
+		"location_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			");",
+			"/",
+			"th",
+			"hasClass",
+			"<html>\n<head>\n  <style>\n    body {\n      padding: 0;\n      margin: 0;\n    }\n  </style>\n</head>\n<body>\n  <img src=\"background.png\" />\n  <div class=\"\"\n</body>\n</html>",
+			"=\"\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	{
+		"mount_points":
+		[
+			"/Users/joshua/code/hogans-alley"
+		]
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0
+	},
+	"input":
+	{
+		"height": 0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0,
+			1
+		],
+		"rows":
+		[
+			0,
+			1
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 189.59375
+	},
+	"replace":
+	{
+		"height": 0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0,
+		"selected_items":
+		[
+			[
+				"hogan2",
+				"hogan2.js"
+			],
+			[
+				"up",
+				"lib/update-libs.sh"
+			],
+			[
+				"srs",
+				"lib/Srsly.Event.js"
+			],
+			[
+				"hog",
+				"hogan.js"
+			],
+			[
+				"hoga",
+				"hogan.js"
+			],
+			[
+				"ran",
+				"range.htm"
+			],
+			[
+				"sr",
+				"/Users/joshua/code/hogans-alley/srsly.Event.js"
+			],
+			[
+				"ra",
+				"/Users/joshua/code/hogans-alley/range.htm"
+			]
+		],
+		"width": 0
+	},
+	"select_project":
+	{
+		"height": 500,
+		"selected_items":
+		[
+		],
+		"width": 380
+	},
+	"show_minimap": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 113.1875,
+	"status_bar_visible": true
+}
