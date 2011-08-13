@@ -8,7 +8,11 @@
 		this.shot = false
 	};
 
-	exports.Round = function(config) {
+	var root = (typeof exports !== 'undefined')
+				? root = exports
+				: root = this.Hogan = this.Hogan || {};
+
+	root.Round = function(config) {
 		var startTime,
 			endTime,
 			timeout,
