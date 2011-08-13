@@ -39,17 +39,22 @@ body {
 
 .target-1 {
   left: 120px;
-  background-image: url(images/good-girl.jpg);
 }
 
 .target-2 {
   left: 280px;
-  background-image: url(images/bad-guy.jpg);
 }
 
 .target-3 {
   left: 440px;
-  background-image: url(images/cop-dude.png);
+}
+
+.good-guy {
+  background-image: url(images/good-girl.jpg);
+}
+
+.bad-guy {
+  background-image: url(images/bad-guy.jpg);
 }
 
 .score {

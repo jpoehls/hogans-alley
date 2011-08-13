@@ -28,10 +28,93 @@
 
   <script src="hogan.js"></script>
   <script>
-    $('.msg').hide();
-    $('.miss').hide();
+    $('.msg,.miss,.target,.stopwatch,.round,.misses,.score').hide();
 
-    
+    $('.start-game').show();
+
+    $(document).keyup(function(ev) {
+      // if the [J] key was pressed
+      if (ev.keyCode === 74) {
+        if ($('.start-game').is(':visible')) {
+          startGame();
+        }
+      }
+    });
+
+    var maxMisses = 10,
+        misses = 0,
+        round = 0,
+        score = 0,
+        topScore = 0;
+
+function tallyScore(stats) {
+  misses += stats.misses;
+  $('.misses').text(misses);
+  
+  // more points for faster rounds
+  // minimum 1000 points per hit
+  score += (stats.hits * Math.max(10000 - stats.duration, 1000));
+  $('.score').text(score);
+
+  if (score > topScore) {
+    topScore = score;
+    $('.top-score').text(topScore);
+  }
+}
+
+    function startGame() {
+      
+      $('.msg').hide();
+      $('.round,.misses,.score').show();
+      startRound();
+
+    }
+
+    function startRound() {
+      round ++;
+      $('.round').text(round);
+
+      var r = new Hogan.Round({
+        
+        timeout: 3000, // 3 seconds
+
+        targetCount: 3,
+
+        maxBadGuys: 2,
+
+        onShowTargets: function(targets) {
+          for (var i=0; i<targets.length; i++) {
+            $('.target-' + targets[i].position)
+              .addClass(targets[i].type === 'good' ? 'good-guy' : 'bad-guy')
+              .click(function() {
+                r.shoot(targets[i].position);
+              });
+          }
+
+          $('.target').show();
+        },
+
+        onHit: function(target) {
+          console.log('Target ' + target.position + ' shot!');
+        },
+
+        onEnd: function(stats) {
+          tallyScore(stats);
+
+          if (misses < maxMisses) {
+            startRound();
+          }
+          else {
+            // GAME OVER
+            $('.msg,.miss,.target,.stopwatch').hide();
+            $('.start-game,.game-over').show();
+          }
+        }
+
+      });
+
+      r.start();
+    }
 
 
   </script>
