@@ -49,12 +49,28 @@ body {
   left: 440px;
 }
 
-.good-guy {
-  background-image: url(images/good-girl.jpg);
+.good-guy-1 {
+  background-image: url(images/lady.png);
 }
 
-.bad-guy {
-  background-image: url(images/bad-guy.jpg);
+.good-guy-2 {
+  background-image: url(images/professor.png);
+}
+
+.good-guy-3 {
+  background-image: url(images/police.png);
+}
+
+.bad-guy-1 {
+  background-image: url(images/gang-a.png);
+}
+
+.bad-guy-2 {
+  background-image: url(images/gang-b.png);
+}
+
+.bad-guy-3 {
+  background-image: url(images/gang-c.png);
 }
 
 .score {
@@ -78,11 +94,11 @@ body {
 }
 
 .misses {
-  font-size: 28px;
+  font-size: 22px;
   color: White;
   position: absolute;
-  top: 510px;
-  left: 355px;
+  top: 512px;
+  left: 352px;
 }
 
 .top-score {

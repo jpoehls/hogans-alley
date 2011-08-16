@@ -24,7 +24,7 @@
   <div class="misses">0</div>
   <div class="top-score">000000</div>
   <div class="msg start-game">PRESS [J] TO START</div>
-  <div class="msg game-over">GAME OVER<br/><br/>PRESS [J] TO PLAY AGAIN</div>
+  <div class="msg game-over">GAME OVER<br/><br/>PRESS [J] TO RETRY</div>
 
   <script src="hogan.js"></script>
   <script>
@@ -90,11 +90,28 @@ function tallyScore(stats) {
         maxBadGuys: 2,
 
         onShowTargets: function(targets) {
+          $('.stopwatch,.miss').hide();
+
+          var goodGuys = ['good-guy-1', 'good-guy-2', 'good-guy-3'];
+          var badGuys = ['bad-guy-1', 'bad-guy-2', 'bad-guy-3'];
           for (var i=0; i<targets.length; i++) {
+            var cls;
+
+            if (targets[i].type === 'good') {
+              cls = goodGuys.splice(Math.floor(Math.random()*goodGuys.length), 1)[0];
+            }
+            else {
+              cls = badGuys.splice(Math.floor(Math.random()*badGuys.length), 1)[0];
+            }
+
             $('.target-' + targets[i].position)
-              .removeClass('good-guy')
-              .removeClass('bad-guy')
-              .addClass(targets[i].type === 'good' ? 'good-guy' : 'bad-guy')
+              .removeClass('good-guy-1')
+              .removeClass('good-guy-2')
+              .removeClass('good-guy-3')
+              .removeClass('bad-guy-1')
+              .removeClass('bad-guy-2')
+              .removeClass('bad-guy-3')
+              .addClass(cls)
               .unbind('click')
               .one('click', targets[i].position, function(e) {
                 console.log('shooting target: ' + e.data)
@@ -102,24 +119,32 @@ function tallyScore(stats) {
               });
           }
 
-          $('.target').show();
+          $('.target').show('fast');
         },
 
         onHit: function(target) {
+          if (target.type === 'good') {
+            $('.target-' + target.position + ' .miss').show();
+          }
+
           console.log('Target ' + target.position + ' shot!');
         },
 
         onEnd: function(stats) {
           tallyScore(stats);
 
-          if (misses < maxMisses) {
-            startRound();
-          }
-          else {
-            // GAME OVER
-            $('.msg,.miss,.target,.stopwatch').hide();
-            $('.game-over').show();
-          }
+          setTimeout(function() {
+            $('.target').hide('slow');
+            
+            if (misses < maxMisses) {
+              startRound();
+            }
+            else {
+              // GAME OVER
+              $('.msg,.miss,.target,.stopwatch').hide();
+              $('.game-over').show();
+            }
+          }, 2000);
         }
 
       });
