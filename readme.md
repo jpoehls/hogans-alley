@@ -12,13 +12,13 @@ Ports to other systems may be coming soon. Who knows.
 
 `js\index.htm` is the HTML version of the game.
 
-`js\node.js` is the [Node.js](http://www.nodejs.org) version.
+`js\node.js` is the [Node.js](http://www.nodejs.org) version. Run with `node node.js` from the terminal.
 
 ## Digging Deeper
 
 `js\hogan-engine.js` has all of the core game logic.
 
-![Original Hogan's Alley Characters](https://github.com/jpoehls/hogans-alley/raw/master/images/hogans-alley-hogan-hogans-alley-nes-screen-screenshot-gameplay-pegasus-2.jpg)
+![Original Hogan's Alley Characters](https://github.com/jpoehls/hogans-alley/raw/master/reference/hogans-alley-hogan-hogans-alley-nes-screen-screenshot-gameplay-pegasus-2.jpg)
 
 ## License
 
