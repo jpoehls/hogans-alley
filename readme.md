@@ -2,6 +2,8 @@
 
 This is clone of the original Hogan's Alley game for Nintendo. I'm using it to learn some game development basics so expect it to be lame and half functional at best.
 
+![Original Hogan's Alley Menu](https://github.com/jpoehls/hogans-alley/raw/master/reference/menu.jpg)
+
 ## What's Here?
 
 The game engine itself is completely separated from the UI implementation. So far the engine drives an HTML/JavaScript version of the game and a partial command line implementation using [Node.js](http://www.nodejs.org). Yes, I said command line.
@@ -17,8 +19,6 @@ Ports to other systems may be coming soon. Who knows.
 ## Digging Deeper
 
 `js\hogan-engine.js` has all of the core game logic.
-
-![Original Hogan's Alley Characters](https://github.com/jpoehls/hogans-alley/raw/master/reference/hogans-alley-hogan-hogans-alley-nes-screen-screenshot-gameplay-pegasus-2.jpg)
 
 ## License
 
