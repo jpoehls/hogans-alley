@@ -10,9 +10,9 @@ Ports to other systems may be coming soon. Who knows.
 
 ## Playing the game
 
-*range.htm* (as in "shooting range") is the HTML version of the game.
+`range.htm` (as in "shooting range") is the HTML version of the game.
 
-*range.node.js* is the [Node.js](http://www.nodejs.org) version.
+`range.node.js` is the [Node.js](http://www.nodejs.org) version.
 
 ![Original Hogan's Alley Characters](https://github.com/jpoehls/hogans-alley/raw/master/images/hogans-alley-hogan-hogans-alley-nes-screen-screenshot-gameplay-pegasus-2.jpg)
 
