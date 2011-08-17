@@ -1,4 +1,4 @@
-var Hogan = require('./hogan.js');
+var Hogan = require('./hogan-engine.js');
 
 var maxMisses = 10,
     misses = 0,

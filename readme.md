@@ -10,9 +10,13 @@ Ports to other systems may be coming soon. Who knows.
 
 ## Playing the game
 
-`range.htm` (as in "shooting range") is the HTML version of the game.
+`js\index.htm` is the HTML version of the game.
 
-`range.node.js` is the [Node.js](http://www.nodejs.org) version.
+`js\node.js` is the [Node.js](http://www.nodejs.org) version.
+
+## Digging Deeper
+
+`js\hogan-engine.js` has all of the core game logic.
 
 ![Original Hogan's Alley Characters](https://github.com/jpoehls/hogans-alley/raw/master/images/hogans-alley-hogan-hogans-alley-nes-screen-screenshot-gameplay-pegasus-2.jpg)
 

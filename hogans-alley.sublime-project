@@ -31,11 +31,59 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/Users/joshua/code/hogans-alley/range.htm",
+			"settings":
+			{
+				"buffer_size": 3812,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/joshua/code/hogans-alley/readme.md",
+			"settings":
+			{
+				"buffer_size": 1073,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/joshua/code/hogans-alley/styles.css",
+			"settings":
+			{
+				"buffer_size": 1653,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/joshua/code/hogans-alley/range.node.js",
+			"settings":
+			{
+				"buffer_size": 1675,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/joshua/code/hogans-alley/hogan.old.js",
+			"settings":
+			{
+				"buffer_size": 7352,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/joshua/code/hogans-alley/hogan.js",
+			"settings":
+			{
+				"buffer_size": 2251,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/User/node.sublime-build",
 	"command_palette":
 	{
-		"height": 31,
+		"height": 360,
 		"selected_items":
 		[
 			[
@@ -67,16 +115,19 @@
 	},
 	"file_history":
 	[
+		"/Users/joshua/code/hogans-alley/hogan.js",
+		"/Users/joshua/code/hogans-alley/range-node.js",
+		"/Users/joshua/code/hogans-alley/node-hogan.js",
+		"/Users/joshua/code/hogans-alley/timeout-test.js",
+		"/Users/joshua/code/hogans-alley/hogan2.js",
+		"/Users/joshua/code/hogans-alley/range.htm",
 		"/Users/joshua/Dropbox/env/sublime/User/JSLint.py",
 		"/Users/joshua/Dropbox/env/sublime/User/hello_world.py",
 		"/Users/joshua/Dropbox/env/sublime/Default/delete_word.py",
-		"/Users/joshua/code/hogans-alley/hogan2.js",
 		"/Users/joshua/code/srslyjs/tests/Srsly.Event.tests.js",
 		"/Users/joshua/code/hogans-alley/lib/Srsly.Event.js",
-		"/Users/joshua/code/hogans-alley/hogan.js",
 		"/Users/joshua/Dropbox/env/sublime/User/node.sublime-build",
 		"/Users/joshua/code/hogans-alley/lib/update-libs.sh",
-		"/Users/joshua/code/hogans-alley/range.htm",
 		"/Users/joshua/code/hogans-alley/hogans-alley.sublime-project",
 		"/Users/joshua/code/hogans-alley/styles.css",
 		"/Users/joshua/code/srslyjs/srsly.Event.js",
@@ -114,6 +165,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"totalBad",
+			"'good'",
+			"'bad'",
+			"onsetup",
 			");",
 			"/",
 			"th",
@@ -127,6 +182,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"totalBadGuys",
+			"GOOD",
+			"BAD"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -144,8 +202,174 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/Users/joshua/code/hogans-alley/range.htm",
+					"settings":
+					{
+						"buffer_size": 3812,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3332,
+								3332
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0,
+						"translation.y": 1773,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/joshua/code/hogans-alley/readme.md",
+					"settings":
+					{
+						"buffer_size": 1073,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								537,
+								537
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/joshua/code/hogans-alley/styles.css",
+					"settings":
+					{
+						"buffer_size": 1653,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1375,
+								1375
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0,
+						"translation.y": 1329,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/joshua/code/hogans-alley/range.node.js",
+					"settings":
+					{
+						"buffer_size": 1675,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1601,
+								1601
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0,
+						"translation.y": 301,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/joshua/code/hogans-alley/hogan.old.js",
+					"settings":
+					{
+						"buffer_size": 7352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3589,
+								3429
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0,
+						"translation.y": 2393,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/joshua/code/hogans-alley/hogan.js",
+					"settings":
+					{
+						"buffer_size": 2251,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1884,
+								1884
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0,
+						"translation.y": 1159,
+						"zoom_level": 1
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -180,13 +404,9 @@
 		]
 	},
 	"menu_visible": true,
-	"output.exec":
-	{
-		"height": 189.59375
-	},
 	"replace":
 	{
-		"height": 0
+		"height": 62
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -194,6 +414,46 @@
 		"height": 0,
 		"selected_items":
 		[
+			[
+				"ho",
+				"hogan.js"
+			],
+			[
+				"hogan.ol",
+				"hogan.old.js"
+			],
+			[
+				"ran",
+				"range.node.js"
+			],
+			[
+				"styles",
+				"styles.css"
+			],
+			[
+				"range",
+				"range.htm"
+			],
+			[
+				"hogan",
+				"hogan.js"
+			],
+			[
+				"hoga",
+				"hogan.js"
+			],
+			[
+				"range-",
+				"range-node.js"
+			],
+			[
+				"node",
+				"node-hogan.js"
+			],
+			[
+				"hogan.js",
+				"hogan.js"
+			],
 			[
 				"hogan2",
 				"hogan2.js"
@@ -209,14 +469,6 @@
 			[
 				"hog",
 				"hogan.js"
-			],
-			[
-				"hoga",
-				"hogan.js"
-			],
-			[
-				"ran",
-				"range.htm"
 			],
 			[
 				"sr",
